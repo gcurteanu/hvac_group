@@ -49,6 +49,9 @@ OPTIONS_SCHEMA = {
         )
     ),
     vol.Required(CONF_HIDE_MEMBERS, default=False): selector.BooleanSelector(),
+    vol.Required(CONF_PRECISION, default=0.5): selector.NumberSelector(),
+    vol.Required(CONF_HEAT_TOLERANCE, default=0.5): selector.NumberSelector(),
+    vol.Required(CONF_COLD_TOLERANCE, default=0.5): selector.NumberSelector(),
 }
 
 CONFIG_SCHEMA = {
